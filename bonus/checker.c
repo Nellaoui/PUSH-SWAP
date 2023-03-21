@@ -6,7 +6,7 @@
 /*   By: nelallao <nelallao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 00:10:04 by nelallao          #+#    #+#             */
-/*   Updated: 2023/03/21 16:29:39 by nelallao         ###   ########.fr       */
+/*   Updated: 2023/03/21 18:14:49 by nelallao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	main(int ac, char **av)
 			break ;
 		ft_instruction(str, &stacka, &stackb);
 	}
-	if (ft_check_sorted(&stacka))
+	if (ft_check_sorted(&stacka) && stackb.top == -1)
 		ft_putstr_fd("OK\n", 1);
 	else
 		ft_putstr_fd("KO\n", 1);
